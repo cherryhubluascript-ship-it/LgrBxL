@@ -47,7 +47,7 @@ setInterval(() => {
     const now = Date.now();
     const diff = now - serverData.lastUpdate;
 
-    if (diff > 2000) { // 2 segundos
+    if (diff > 40000) { // 40 segundos
         console.log("Servidor expirado (2s sin actualizar), limpiando datos...");
         serverData = {
             placeId: null,
